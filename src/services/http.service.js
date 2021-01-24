@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-axios.defaults.baseURL = "ec2-3-88-229-13.compute-1.amazonaws.com:8001";
+axios.defaults.baseURL = "http://ec2-3-88-229-13.compute-1.amazonaws.com:8001";
 
 axios.interceptors.response.use(null, (error) => {
     console.log("interceptor called");
